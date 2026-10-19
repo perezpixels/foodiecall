@@ -4,6 +4,8 @@
 # Design reference screens (Stitch exports)
 stitch_foodiecall_restaurant/** linguist-vendored
 stitch_foodiecall_restaurant/** linguist-documentation
+stitch_foodiecall_restaurant/** linguist-detectable=false
+*.html linguist-detectable=false
 
 # Client PDF / capture tooling — not the product runtime
 presentation/** linguist-vendored
