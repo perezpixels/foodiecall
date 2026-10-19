@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed": "#7ffc97", "tertiary-fixed-dim": "#ffb95f", "inverse-primary": "#ffb599", "on-surface": "#1e1b19", "on-tertiary": "#ffffff", "on-surface-variant": "#5a4138", "surface-bright": "#fff8f5", "surface-container-high": "#eee7e3", "surface-variant": "#e9e1dd", "surface-container": "#f4ece8", "on-primary": "#ffffff", "on-error": "#ffffff", "on-background": "#1e1b19", "error-container": "#ffdad6", "surface-container-low": "#faf2ee", "on-tertiary-fixed-variant": "#653e00", "primary-fixed-dim": "#ffb599", "outline-variant": "#e2bfb2", "on-primary-fixed-variant": "#7f2b00", "primary": "#a33900", "on-error-container": "#93000a", "surface-container-highest": "#e9e1dd", "on-secondary-fixed-variant": "#005320", "surface": "#fff8f5", "secondary-container": "#7cf994", "tertiary-container": "#a36700", "error": "#ba1a1a", "tertiary": "#825100", "on-tertiary-fixed": "#2a1700", "on-tertiary-container": "#fffbff", "inverse-surface": "#33302d", "primary-container": "#cc4900", "outline": "#8e7166", "surface-dim": "#e0d8d5", "background": "#fff8f5", "primary-fixed": "#ffdbce", "on-secondary-fixed": "#002109", "inverse-on-surface": "#f7efeb", "secondary-fixed-dim": "#62df7d", "on-primary-fixed": "#370e00", "surface-tint": "#a73a00", "surface-container-lowest": "#ffffff", "secondary": "#006e2d", "tertiary-fixed": "#ffddb8", "on-primary-container": "#fffbff", "on-secondary": "#ffffff", "on-secondary-container": "#007230" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "gutter": "1rem" }, "fontFamily": { "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"] }, "fontSize": { "display": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Modern minimalist vector logo mark for 'Foodiecall Kitchen'. An iconic fusion of a gourmet dining cloche dome, a phone notification bell ring wave, and a fork spark. Warm terracotta orange (#EA580C) and basil green (#16A34A), clean flat vector icon graphic mark on transparent or clean round background.. Design context: - Primary color: #ea580c
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X1vLq77HHP5L2LV--C1kg-Qvb7xmX1mHhWIqhO9iJlmTEDriJ7CZzLT-15OKtT6fWKh1UyCfRisXakbIy91fWQq2lZEsoedo4pf1F3uNRQx6qngazedwXKJUAkQbZpGZT_lJWRYZpsrGOyH2_TOFrxkgfuC10_my55XRY3GtRKzFGVLVK7nvIuGOmajSxB67ngzEdoXqWN5vGqtDku0a3IqAQeRHGB9i1ntclyitgnkIQ7xoVftWkwavg7"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Foodiecall</span><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Kitchen Portal</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-full w-fit"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-bold">Downtown Hub • Live</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="live-orders-&-dispatch" href="#"><span class="material-symbols-outlined text-xl">moped</span><span>Live Orders & Dispatch</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="menu-&-inventory" href="#"><span class="material-symbols-outlined text-xl">restaurant_menu</span><span>Menu & Inventory</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="stations-&-staff" href="#"><span class="material-symbols-outlined text-xl">skillet</span><span>Stations & Staff</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="analytics-&-reports" href="#"><span class="material-symbols-outlined text-xl">query_stats</span><span>Analytics & Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="settings" href="#"><span class="material-symbols-outlined text-xl">tune</span><span>Settings</span></a></nav></div><div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Kitchen Display</span><span class="font-body-sm text-body-sm text-on-surface-variant">Terminal #4 active</span></div><span class="material-symbols-outlined text-primary text-xl">wifi</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-xl"><span class="material-symbols-outlined text-primary text-lg">storefront</span><span class="font-label-md text-label-md text-on-surface">Downtown Kitchen Hub #01</span><span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span></div><div class="flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-xl w-80"><span class="material-symbols-outlined text-on-surface-variant text-base">search</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-1 select-none">Search tickets, dishes, couriers...</span><span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-xs py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-secondary-container/30 px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-bold">Accepting Orders</span></div><button class="relative p-space-xs rounded-full hover:bg-surface-container transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WaKkrtCzf6bsrLHWCK4KlIa0qNmDmXni62o3Drv6F-KyuzRVtI4XE6a385YWMxQwn233951fpkFijbIecvxzsTQ0ag9SWbQv1R3C7-uOM2ytAwCkW18GYc1XhxUQbLc71_L9CgmqON0prPePRRfKF4eVzWSc7QAH62v_Xp-4ku4jZU5cGcccr47etg-VeRehlWHFzBN0TpkbibQ4BW2naBZBOaNSBDJdBU3rowUSMLhfkA5KN37cziMU3a"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Chef Marcus</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-none">Head Ops</span></div></div></div></header><main class="w-full pt-16 px-space-lg pb-space-xl bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Operational Greeting & Live Shift Ribbon -->
+<section class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="relative flex items-center justify-center w-14 h-14 rounded-xl bg-primary-fixed text-primary shrink-0">
+<span class="material-symbols-outlined text-display" style="font-variation-settings: 'FILL' 1;">dinner_dining</span>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-secondary"></span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface">Welcome back, Head Chef Marco!</span>
+<span class="bg-secondary-container/40 text-on-secondary-container px-space-xs py-0.5 rounded font-label-sm text-label-sm font-bold uppercase tracking-wider">Kitchen Live</span>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-md text-body-md mt-0.5">
+<span class="flex items-center gap-1 font-title-md text-title-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-base">storefront</span>
+            Downtown Kitchen Hub #01
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-base">schedule</span>
+            Shift: Dinner Rush (17:00 – 22:30)
+          </span>
+<span class="text-outline-variant hidden md:inline">•</span>
+<span class="font-label-sm text-label-sm text-primary font-bold hidden md:inline">Peak Volume Window</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Controls & Kitchen Throttle Bar -->
+<div class="flex items-center gap-space-xs shrink-0 flex-wrap">
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md" id="throttleBtn">
+<span class="material-symbols-outlined text-tertiary-container text-lg">timer</span>
+<span>Prep Delay: <span class="text-primary font-bold" id="throttleVal">+0m</span></span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md" id="chimeBtn">
+<span class="material-symbols-outlined text-secondary text-lg">notifications_active</span>
+<span>Audio Ping</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2.5 rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all shadow-sm font-label-md text-label-md">
+<span class="material-symbols-outlined text-lg">block</span>
+<span>Manage 86'd (1)</span>
+</button>
+</div>
+</section>
+<!-- 4-Card Executive KPI Matrix -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- KPI 1: Today's Revenue -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Today's Gross Sales</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">$6,420.50</span>
+</div>
+<div class="flex items-center gap-0.5 px-space-xs py-1 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+          +18.4%
+        </div>
+</div>
+<!-- Sparkline Graphic -->
+<div class="my-space-sm h-8 w-full flex items-end gap-1">
+<div class="flex-1 bg-primary/20 rounded-t h-[30%]"></div>
+<div class="flex-1 bg-primary/20 rounded-t h-[45%]"></div>
+<div class="flex-1 bg-primary/30 rounded-t h-[35%]"></div>
+<div class="flex-1 bg-primary/40 rounded-t h-[60%]"></div>
+<div class="flex-1 bg-primary/40 rounded-t h-[55%]"></div>
+<div class="flex-1 bg-primary/60 rounded-t h-[80%]"></div>
+<div class="flex-1 bg-primary rounded-t h-[100%]"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs border-none font-body-sm text-body-sm text-on-surface-variant">
+<span>Delivery: <strong class="text-on-surface font-title-md text-title-md">$4,890</strong></span>
+<span>Takeout: <strong class="text-on-surface font-title-md text-title-md">$1,530.50</strong></span>
+</div>
+</div>
+<!-- KPI 2: Active Orders & KDS Load -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Active Orders & KDS Load</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-lg text-headline-lg text-on-surface">14 Tickets</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Live Flow</span>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">receipt_long</span>
+</div>
+</div>
+<!-- Live Stage Breakdown Badges -->
+<div class="grid grid-cols-3 gap-1.5 my-space-sm text-center">
+<div class="bg-surface-container p-1 rounded">
+<div class="font-headline-sm text-headline-sm text-primary">4</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">New Incoming</div>
+</div>
+<div class="bg-surface-container p-1 rounded">
+<div class="font-headline-sm text-headline-sm text-tertiary-container">6</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">In Fire / Prep</div>
+</div>
+<div class="bg-surface-container p-1 rounded">
+<div class="font-headline-sm text-headline-sm text-secondary">4</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Ready Expo</div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Avg Cook: <strong class="text-on-surface">12m 15s</strong></span>
+<span class="text-secondary font-label-sm text-label-sm font-semibold">Target < 15m (Optimal)</span>
+</div>
+</div>
+<!-- KPI 3: Kitchen Fulfillment Rate -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Kitchen Fulfillment Rate</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">98.2%</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-xl">task_alt</span>
+</div>
+</div>
+<!-- Fulfillment Bar visual -->
+<div class="my-space-sm">
+<div class="w-full bg-surface-container-high h-2.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98.2%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+          0 Cancelled Tickets
+        </span>
+<span>218 Complete Today</span>
+</div>
+</div>
+<!-- KPI 4: Active Couriers & Fleet Handover -->
+<div class="flex flex-col justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Active Courier Fleet</span>
+<span class="font-headline-lg text-headline-lg text-on-surface mt-1">7 En Route</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">two_wheeler</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs my-space-sm bg-surface-container-low p-2 rounded-lg">
+<span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">3 riders within 400m perimeter</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant">
+<span>Dispatch Handover:</span>
+<strong class="text-primary font-title-md text-title-md">2m 10s</strong>
+</div>
+</div>
+</section>
+<!-- Main Split Canvas: Left Operations (65%) | Right Live Station & Staffing (35%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT MAIN COLUMN: 65% (8/12 Desktop Grid) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg min-w-0">
+<!-- Urgent Kitchen Operational Alerts -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">campaign</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Urgent Kitchen Alerts & Expo Flags</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-space-xs py-0.5 rounded">3 Priority Flags</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Alert Item 1: 86 Notice -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-error-container/40 text-on-surface">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-8 h-8 rounded-full bg-error text-on-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">warning</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-error font-bold">ITEM 86'd: Spicy Crispy Chicken</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-on-surface-variant">4:30 PM Log</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Brioche delivery delayed by artisanal bakery supplier. Stock depletion in POS enforced.</p>
+</div>
+</div>
+<button class="shrink-0 px-space-sm py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-error transition-colors">
+              Manage
+            </button>
+</div>
+<!-- Alert Item 2: Allergy Ticket Warning -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-tertiary-fixed/40 text-on-surface">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">emergency</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-tertiary font-bold">SEVERE ALLERGY: Ticket #FK-8945</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-tertiary font-bold">Sesame Flag</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Burger Bay: Sanitize board, butter-toasted potato roll substitute only. Expo Station signoff required.</p>
+</div>
+</div>
+<button class="shrink-0 px-space-sm py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-tertiary font-semibold transition-colors">
+              Acknowledge
+            </button>
+</div>
+<!-- Alert Item 3: Courier Inbound -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-secondary-container/30 text-on-surface">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base">sports_motorsports</span>
+</span>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-title-md text-title-md text-secondary font-bold">Courier Approaching: Marcus Vance</span>
+<span class="font-label-sm text-label-sm bg-surface-container px-1.5 py-0.5 rounded text-secondary font-semibold">ETA 3 Mins</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Pick up for Order #FK-8942 (2 items, Insulated thermal hot bag ready).</p>
+</div>
+</div>
+<button class="shrink-0 px-space-sm py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container font-label-md text-label-md text-secondary font-semibold transition-colors">
+              Seal Bag
+            </button>
+</div>
+</div>
+</section>
+<!-- Hourly Revenue & Order Volume Chart Visualizer -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Hourly Velocity & Peak Volume</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live revenue curve tracking real-time delivery and pickup surges (11:00 AM – 21:00 PM)</p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-xs">Revenue ($)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface">Ticket Volume</button>
+</div>
+</div>
+<!-- Custom Inline High-Fidelity SVG Curve Visualization -->
+<div class="relative w-full h-64 bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between overflow-hidden">
+<!-- Ambient subtle gradient fill for peak focus -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+<!-- Y-Axis Ticks -->
+<div class="absolute left-space-md top-space-md bottom-8 flex flex-col justify-between text-on-surface-variant/60 font-label-sm text-label-sm select-none">
+<span>$1,500</span>
+<span>$1,000</span>
+<span>$500</span>
+<span>$0</span>
+</div>
+<!-- Peak Marker Banner -->
+<div class="absolute top-6 left-[68%] -translate-x-1/2 bg-primary text-on-primary px-space-sm py-1 rounded-md shadow-md flex items-center gap-1 z-10 animate-bounce">
+<span class="material-symbols-outlined text-sm">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-bold">Peak Rush: $1,420 @ 7:30 PM</span>
+</div>
+<!-- SVG Chart Area -->
+<div class="ml-12 mr-2 h-44 relative">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 700 160">
+<defs>
+<lineargradient id="foodieRevGrad" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#cc4900" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#cc4900" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Lines -->
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="700" y1="10" y2="10"></line>
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="700" y1="60" y2="60"></line>
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="700" y1="110" y2="110"></line>
+<line stroke="#e9e1dd" x1="0" x2="700" y1="155" y2="155"></line>
+<!-- Area Fill -->
+<path d="M0,135 Q70,120 140,110 T280,85 T420,95 T480,20 T560,35 T630,70 T700,90 L700,160 L0,160 Z" fill="url(#foodieRevGrad)"></path>
+<!-- Main Stroke Line -->
+<path d="M0,135 Q70,120 140,110 T280,85 T420,95 T480,20 T560,35 T630,70 T700,90" fill="none" stroke="#a33900" stroke-linecap="round" stroke-width="3.5"></path>
+<!-- Peak Datapoints -->
+<circle cx="480" cy="20" fill="#a33900" r="6" stroke="#ffffff" stroke-width="2.5"></circle>
+<circle cx="560" cy="35" fill="#a33900" r="4.5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="280" cy="85" fill="#a33900" r="4" stroke="#ffffff" stroke-width="2"></circle>
+</svg>
+</div>
+<!-- X-Axis Labels -->
+<div class="ml-12 mr-2 flex justify-between font-label-sm text-label-sm text-on-surface-variant pt-2 border-t-0 select-none">
+<span>11:00 AM</span>
+<span>1:00 PM</span>
+<span>3:00 PM</span>
+<span>5:00 PM</span>
+<span class="text-primary font-bold">7:30 PM (Rush)</span>
+<span>9:00 PM</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+              Dinner Velocity Target
+            </span>
+<span class="flex items-center gap-1">
+<span class="w-3 h-3 rounded-full bg-secondary-fixed inline-block"></span>
+              Fulfillment Speed
+            </span>
+</div>
+<span>Shift Average: <strong class="text-on-surface">$713 / hr</strong></span>
+</div>
+</section>
+<!-- Top Performing Gourmet Dishes Today (Table) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Top Performing Gourmet Dishes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live station yield, volume velocity and customer satisfaction</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-0.5">
+            Full Menu Inventory
+            <span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+</div>
+<!-- Dishes Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l-lg">Dish Item</th>
+<th class="py-space-sm px-space-md text-center">Volume Sold</th>
+<th class="py-space-sm px-space-md text-right">Revenue</th>
+<th class="py-space-sm px-space-md text-center">Satisfaction</th>
+<th class="py-space-sm px-space-md rounded-r-lg text-center">Station Bay</th>
+</tr>
+</thead>
+<tbody class="divide-y-0">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm shrink-0" data-alt="Close up gourmet smash burger with caramelized onions melted sharp cheddar and artisan brioche bun on dark ceramic background warm restaurant lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuMaADi6fgA6KlQr5hlcczfO5Xsn_jnP__R-ky-IZ0SC8DMiK6g7HQOdqegdJFIe3oNP5iNqBtB67OMfT2Izbl6rtKjwdMXRBWpC_G6UUVCi8RLHlCd3qdX2Qb6_hEqg-Rdhg45I42lPaY32NG-nuAwGlXe5Mfrkq_wM1KBmGIhSzyT-AIrqXWdh3uDpu7Ds6qO2tFRUnXb_Ru0HZVuy11n_xdxuKMZoeSrbjwUifqDbP7lwNhQvJosw"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Chef's Signature Smash Burger</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Brioche, double wagyu patty, truffle aioli</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center font-title-md text-title-md text-on-surface font-semibold">42 sold</td>
+<td class="py-space-sm px-space-md text-right font-headline-sm text-headline-sm text-primary">$693.00</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs">thumb_up</span>
+                    98%
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Grill Bay 1</span>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm shrink-0" data-alt="Crispy golden truffle parmesan fries sprinkled with fresh green parsley served in a rustic brass basket with culinary lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZVidYMDpy4fMLBiUZiAt0nOmT2DjOwJNm-Bayhq3efavTHVI8yiKtdrmBIoqwraaGzNc3yH0cw-vFtz9GosMnhGvBGQ7hoXDO6PVdR2SXEYLGXdGck9dsXGjp1SfXfur3BK71t745sdM-r4PH9kPNR5z63k_qGHspOSN2egP4MD7cdj1hSjS7dLnkEMRjSses_v_XTT5ryPIzY5JQa9uHtKE197ZX-le3sJTcE_kk-Zvs9oJDdTtfXw"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Truffle Parmesan Fries</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hand-cut russets, pecorino, white truffle oil</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center font-title-md text-title-md text-on-surface font-semibold">38 sold</td>
+<td class="py-space-sm px-space-md text-right font-headline-sm text-headline-sm text-primary">$285.00</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs">star</span>
+                    100%
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Fryer Station</span>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm shrink-0" data-alt="Artisanal wood fired burrata margherita pizza with blistered crust fresh creamy burrata ball and fragrant basil leaves on rustic wooden peel" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaxHw-DgI093Bm2HtZ7nAhyzHhhaLwnRnmw-IM4Wtiuq6LSe_WiZRirONvtLrwB7byhZXiibL5-xdJ4oYTFxXDr0Xoij4UKj5kdp2VTFpu6yEI1dMGnjqgF8CHTVFfDLoao-ehk3NeTRn-rV6kKy7RM1iYohALnGxBwT9y5DeUg6SdzzJ34SpLVhIu2jbf2YHLJti2i8v3Yr_SXduThuNJM95C0ma6drgKpJT04Nln7pqOGicTwzcZQg"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Burrata Margherita Pizza</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">San Marzano DOP, sweet basil, cold burrata</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center font-title-md text-title-md text-on-surface font-semibold">24 sold</td>
+<td class="py-space-sm px-space-md text-right font-headline-sm text-headline-sm text-primary">$420.00</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs">thumb_up</span>
+                    95%
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Wood Deck</span>
+</td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container transition-colors group">
+<td class="py-space-sm px-space-md">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-xl object-cover shadow-sm shrink-0" data-alt="Artisan stacked double bacon cheeseburger with thick cut smoked bacon and melted aged cheddar against warm kitchen counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl9G6mGuQwASAdus2hGN-AiY4uA0pwbhIETn4Ee7Ca-SM9YKxGOliVkoUcnT5yuzjbwTo5mKXTlfAAD03oQi7wahM5acxmaFNkQ5GDSbHHj35QtqXjcOdctnxpzeNoCKxpCA_tr9780qIw1Tuhq3hFuTmpmQTl1Waessx1hWMfXRc3k7RuCIcyolhWi926V0rIaQG_0HYU21rDwD-ic33cRnwaAdDRY1yOFm_lnnVNmzlExn3K_xMJMQ"/>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-bold">Double Smoked Bacon Burger</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Applewood bacon, smoked gouda, charred tomato</span>
+</div>
+</div>
+</td>
+<td class="py-space-sm px-space-md text-center font-title-md text-title-md text-on-surface font-semibold">21 sold</td>
+<td class="py-space-sm px-space-md text-right font-headline-sm text-headline-sm text-primary">$325.50</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-xs">thumb_up</span>
+                    97%
+                  </span>
+</td>
+<td class="py-space-sm px-space-md text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-1 rounded">Grill Bay 1</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div>
+<!-- RIGHT OPERATIONAL COLUMN: 35% (4/12 Desktop Grid) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg min-w-0">
+<!-- Live KDS Kitchen Station Capacity -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">skillet</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Station Loads</span>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse" title="Live Sync Active"></span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Station 1: Grill Station 1 -->
+<div class="flex flex-col gap-1.5 p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Grill Station 1</span>
+<span class="font-label-sm text-label-sm text-error bg-error-container/40 px-2 py-0.5 rounded font-bold">Heavy • 85%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 85%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>5 tickets queued</span>
+<span>Est. turnaround: 8 mins</span>
+</div>
+</div>
+<!-- Station 2: Wood-Fired Deck -->
+<div class="flex flex-col gap-1.5 p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Wood-Fired Deck</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded font-bold">Normal • 45%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 45%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>2 tickets queued</span>
+<span>Deck Temp: 740°F (Optimal)</span>
+</div>
+</div>
+<!-- Station 3: Fryer & Prep Bay -->
+<div class="flex flex-col gap-1.5 p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Fryer & Prep Bay</span>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/40 px-2 py-0.5 rounded font-bold">Normal • 60%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 60%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>3 tickets queued</span>
+<span>Oil Quality: Clean (94%)</span>
+</div>
+</div>
+<!-- Station 4: Expo & Packaging -->
+<div class="flex flex-col gap-1.5 p-space-sm rounded-xl bg-surface-container-low">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Expo & Packaging</span>
+<span class="font-label-sm text-label-sm text-tertiary-container bg-tertiary-fixed/60 px-2 py-0.5 rounded font-bold">High • 90%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full rounded-full" style="width: 90%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>4 bags currently sealing</span>
+<span>Seal turnaround: 45 sec</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Kitchen Brigade on Shift -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">group</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Kitchen Brigade</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">4 on duty</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Staff 1 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Head chef portrait wearing professional chef coat warm friendly culinary expert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs4z1l8ZMf68VPG8iJSVpn4b5rpJEWraTV2ZheLYpWLFeQ9VUh8NhLCQFSJeydaLczHElRtJbzBfuTTO1VoqpzL5DRF7E-wKRJAD3F9mPbhp25Zi3WvtP1Wkq-sZI4XB2SNfohujpwFrkJbkDbdfEglXU6KCFP9Q-DNEQAMTGmMPLojuEpOOwMyPxCcuqcMn0add3d7epHEfueRgfEMSk0-LZf2A1CCfbWFoRkSLY0D6DooH9fRFS8bg"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Chef Marco V.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lead Expediter</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Active 6.0h</span>
+</div>
+<!-- Staff 2 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Female sous chef with hair pulled back in kitchen apron focused and smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyswdDN-ZHE77VgHWfd3B3Xq_92Gm3hN99Ohw6MtBeLu8wBlcs9k0uQIEw2LV6d27gECujq3I9UYWY0ysNCzwK9zRAeK9TsLVU-OLU451OcdkdxDrC2phrK1SqYOruZ65xR7ho8ENA-Ecqb-MdQFj5alCdPLMj0YJATzZehroRqvUZIFLHIZASaTdPeZl_Vl6OLVCZmzMH57ZLzPAhEtqql88ndK31r4LUnNwmZkWD2GQ8I4yWr_y-HQ"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Elena R.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Grill Station Lead</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Active 5.0h</span>
+</div>
+<!-- Staff 3 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Male cook smiling in chef whites in restaurant kitchen prep station" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiXwNQciW5IZ5HR5U6NTZr1PFKz07-3SuOPN30nBl-EPAhaSko_noYDPU_s771irF5A-uzQ_VTBsu9K8yQbNmohCuH9q8tfnNUmyaOQTlkZotNKzFy4y6bsmWHII6A69vuldl9UN4wb0UWRNkpyRVSdiyWwR8zgJc_ItDjfTZ1b1pZQhc2qRirJQbYK0EGaEfGlzE55nLykWmnJSh73wm6R66MNeEvpgQuC402dMvfhZVHObBhViXcJA"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Carlos M.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Prep Bay Lead</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Active 4.5h</span>
+</div>
+<!-- Staff 4 -->
+<div class="flex items-center justify-between p-space-xs rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative">
+<img class="w-10 h-10 rounded-full object-cover" data-alt="Female restaurant dispatch team member smiling with headset in modern clean order pickup bay" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCywhctFrT_rd4AmQWrksUibwVTUme7eTtla7E2hapNw6WdJmYD_4NyecBFeRhajPOLDwGGRyUdaq0wt7RtASUyWj5fflrDsPbkqrS5PC8Sul1NaZcYoc53JBNzyLRl9fc7VJS3nTbuBCLLTfNIQciY_qiHI3KDUAxxaqsRfP7o6fCV2Iz9WlTgCfzPWAEwCE6Lqv1dwS4WqUgucjsY8BMaUlZza1eydHO16RC5KJZBtpEZnCCvD1lI7Q"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Maya P.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dispatch & Courier Handover</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2 py-1 rounded">Active 3.0h</span>
+</div>
+</div>
+</section>
+<!-- Shift Operations Tools -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Shift Utilities</span>
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-title-md text-title-md" id="exportShiftLog">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">download</span>
+            Export Daily Shift Audit Log
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CSV/PDF</span>
+</button>
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-title-md text-title-md">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary">inventory_2</span>
+            Inventory Mid-Shift Audit
+          </span>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-title-md text-title-md">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">print</span>
+            Reprint Last KDS Batch
+          </span>
+<span class="font-label-sm text-label-sm text-primary font-bold">#FK-8945</span>
+</button>
+</section>
+</div>
+</div>
+<!-- Notification Toast Container for Interactive Actions -->
+<div class="fixed bottom-6 right-6 hidden bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-lg z-50 flex items-center gap-space-sm transition-all transform translate-y-2" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-fixed text-xl" id="toastIcon">check_circle</span>
+<span class="font-title-md text-title-md" id="toastMsg">Action successful</span>
+</div>
+</div>
+<script>
+  // Simple interactive controls for dashboard feel
+  (function() {
+    const throttleBtn = document.getElementById('throttleBtn');
+    const throttleVal = document.getElementById('throttleVal');
+    const chimeBtn = document.getElementById('chimeBtn');
+    const exportBtn = document.getElementById('exportShiftLog');
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastIcon = document.getElementById('toastIcon');
+
+    let currentThrottle = 0;
+    const throttleSteps = [0, 5, 10, 15, 20];
+
+    function showToast(message, icon = 'check_circle') {
+      if (!toast) return;
+      toastMsg.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('hidden', 'translate-y-2');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('translate-y-2');
+        setTimeout(() => toast.classList.add('hidden'), 200);
+      }, 3000);
+    }
+
+    if (throttleBtn) {
+      throttleBtn.addEventListener('click', () => {
+        const nextIdx = (throttleSteps.indexOf(currentThrottle) + 1) % throttleSteps.length;
+        currentThrottle = throttleSteps[nextIdx];
+        throttleVal.textContent = `+${currentThrottle}m`;
+        showToast(
+          currentThrottle > 0 ? `Kitchen Throttling set to +${currentThrottle} mins on POS & customer apps.` : `Kitchen Throttling deactivated. Normal speed resumed.`,
+          'timer'
+        );
+      });
+    }
+
+    if (chimeBtn) {
+      chimeBtn.addEventListener('click', () => {
+        chimeBtn.classList.add('scale-95');
+        setTimeout(() => chimeBtn.classList.remove('scale-95'), 150);
+        showToast('KDS Audio chime triggered across Hub terminals #01 - #04.', 'volume_up');
+      });
+    }
+
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        showToast('Shift Audit Log generated. Download initiating...', 'download_done');
+      });
+    }
+  })();
+</script></main></div></body></html>

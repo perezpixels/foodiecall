@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary": "#006e2d", "on-tertiary": "#ffffff", "outline": "#8e7166", "secondary-fixed-dim": "#62df7d", "on-primary": "#ffffff", "on-primary-container": "#fffbff", "surface-container": "#f4ece8", "tertiary-fixed-dim": "#ffb95f", "on-primary-fixed-variant": "#7f2b00", "primary-container": "#cc4900", "inverse-primary": "#ffb599", "surface-tint": "#a73a00", "error": "#ba1a1a", "on-error-container": "#93000a", "on-background": "#1e1b19", "error-container": "#ffdad6", "surface-container-high": "#eee7e3", "on-secondary-fixed-variant": "#005320", "secondary-container": "#7cf994", "primary-fixed": "#ffdbce", "secondary-fixed": "#7ffc97", "surface": "#fff8f5", "on-tertiary-fixed-variant": "#653e00", "primary-fixed-dim": "#ffb599", "inverse-on-surface": "#f7efeb", "surface-container-lowest": "#ffffff", "on-secondary-container": "#007230", "on-surface-variant": "#5a4138", "primary": "#a33900", "outline-variant": "#e2bfb2", "on-secondary": "#ffffff", "surface-container-low": "#faf2ee", "on-surface": "#1e1b19", "background": "#fff8f5", "surface-bright": "#fff8f5", "surface-container-highest": "#e9e1dd", "tertiary-fixed": "#ffddb8", "on-tertiary-fixed": "#2a1700", "tertiary": "#825100", "tertiary-container": "#a36700", "surface-variant": "#e9e1dd", "surface-dim": "#e0d8d5", "on-error": "#ffffff", "on-primary-fixed": "#370e00", "on-tertiary-container": "#fffbff", "on-secondary-fixed": "#002109", "inverse-surface": "#33302d" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display": ["34px", { "lineHeight": "42px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between p-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="flex items-center gap-space-sm px-space-xs"><img alt="Foodiecall Kitchen Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1X1vLq77HHP5L2LV--C1kg-Qvb7xmX1mHhWIqhO9iJlmTEDriJ7CZzLT-15OKtT6fWKh1UyCfRisXakbIy91fWQq2lZEsoedo4pf1F3uNRQx6qngazedwXKJUAkQbZpGZT_lJWRYZpsrGOyH2_TOFrxkgfuC10_my55XRY3GtRKzFGVLVK7nvIuGOmajSxB67ngzEdoXqWN5vGqtDku0a3IqAQeRHGB9i1ntclyitgnkIQ7xoVftWkwavg7"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">Foodiecall</span><span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">Kitchen Portal</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-full w-fit"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary font-bold">Downtown Hub • Live</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary text-on-primary font-bold shadow-sm"><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="executive-kitchen-dashboard" href="#">Dashboard</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="live-orders-&-dispatch-management" href="#">Live Orders & Dispatch</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="menu-&-inventory-management" href="#">Menu & Inventory</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="kitchen-stations-&-staff-operations" href="#">Stations & Staff</a><a aria-current="page" class="flex items-center px-space-md py-space-sm rounded-xl transition-all bg-primary text-on-primary font-bold shadow-sm" data-path="analytics-&-deep-performance-reports" href="#">Analytics & Reports</a><a class="flex items-center px-space-md py-space-sm rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all font-title-md text-title-md" data-path="kitchen-portal-configuration-&-settings" href="#">Settings</a></nav></div><div class="p-space-md rounded-xl bg-surface-container flex items-center justify-between"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Kitchen Display</span><span class="font-body-sm text-body-sm text-on-surface-variant">Terminal #4 active</span></div><span class="material-symbols-outlined text-primary text-xl">wifi</span></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-low rounded-xl cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-lg">storefront</span><span class="font-label-md text-label-md text-on-surface">Downtown Kitchen Hub #01</span><span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span></div><div class="flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container rounded-xl w-80"><span class="material-symbols-outlined text-on-surface-variant text-base">search</span><span class="font-body-sm text-body-sm text-on-surface-variant flex-1 select-none">Search tickets, dishes, couriers...</span><span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-xs py-0.5 rounded">⌘K</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs bg-secondary-container/30 px-space-sm py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-secondary-container font-bold">Accepting Orders</span></div><a class="relative p-space-xs rounded-full hover:bg-surface-container transition-colors text-on-surface-variant flex items-center justify-center" data-path="live-notifications-&-dispatch-alerts-modal-/-flyout" href="#"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span></a><a class="flex items-center gap-space-sm pl-space-sm group hover:opacity-90 transition-opacity" data-path="kitchen-staff-&-executive-profile" href="#"><img alt="Chef Marcus Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WaKkrtCzf6bsrLHWCK4KlIa0qNmDmXni62o3Drv6F-KyuzRVtI4XE6a385YWMxQwn233951fpkFijbIecvxzsTQ0ag9SWbQv1R3C7-uOM2ytAwCkW18GYc1XhxUQbLc71_L9CgmqON0prPePRRfKF4eVzWSc7QAH62v_Xp-4ku4jZU5cGcccr47etg-VeRehlWHFzBN0TpkbibQ4BW2naBZBOaNSBDJdBU3rowUSMLhfkA5KN37cziMU3a"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Chef Marcus</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-none">Head Ops</span></div></a></div></header><main class="w-full pt-16 px-space-lg pb-space-xl bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Command & Filter Bar -->
+<section class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-lg">insights</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-bold">Executive Intelligence Unit</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Operational Analytics & Revenue Intelligence</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time telemetry, station bottlenecks, and prime cost optimization for Downtown Hub.</p>
+</div>
+<!-- Controls Cluster -->
+<div class="flex flex-wrap items-center gap-space-sm relative z-10">
+<!-- Hub Selector -->
+<div class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low rounded-full cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-primary text-lg">storefront</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Downtown Kitchen Hub #01</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span>
+</div>
+<!-- Date Range Filter -->
+<div class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low rounded-full cursor-pointer hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-on-surface-variant text-base">calendar_today</span>
+<span class="font-label-md text-label-md text-on-surface">Oct 1 - Oct 31, 2024</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container-high px-space-xs py-0.5 rounded-full">30D</span>
+<span class="material-symbols-outlined text-on-surface-variant text-base">expand_more</span>
+</div>
+<!-- Export Action Dropdown Trigger -->
+<div class="relative group">
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm bg-primary text-on-primary rounded-full hover:bg-primary-container transition-all shadow-sm active:scale-95" id="exportDropdownBtn">
+<span class="material-symbols-outlined text-lg">download</span>
+<span class="font-label-lg text-label-lg font-bold">Export Report</span>
+<span class="material-symbols-outlined text-base">arrow_drop_down</span>
+</button>
+<div class="hidden group-hover:flex flex-col absolute right-0 top-full mt-2 w-48 bg-surface-container-lowest rounded-xl shadow-xl p-space-xs z-50 animate-fadeIn">
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg hover:bg-surface-container font-label-md text-label-md text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary text-base">table_view</span> CSV Raw Data
+          </a>
+<a class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg hover:bg-surface-container font-label-md text-label-md text-on-surface transition-colors" href="#">
+<span class="material-symbols-outlined text-primary text-base">picture_as_pdf</span> PDF Executive Digest
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- 4 Executive KPI Summary Cards -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: GMV / Revenue -->
+<div class="flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Gross Merchandise Value</span>
+<span class="font-display text-display text-on-surface mt-space-xs font-bold leading-tight">$184,920<span class="text-headline-sm text-on-surface-variant">.00</span></span>
+</div>
+<div class="p-space-xs bg-secondary-container/30 text-on-secondary-container rounded-lg flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+<span class="font-label-sm text-label-sm font-bold">14.2%</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary"></span>Delivery (76%)</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>Takeout (24%)</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 76%"></div>
+<div class="h-full bg-tertiary-fixed-dim" style="width: 24%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">vs. $161,890.00 previous month</span>
+</div>
+</div>
+<!-- Card 2: Prep Time (Fire-to-Pass) -->
+<div class="flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ticket Fire-to-Pass</span>
+<span class="font-display text-display text-on-surface mt-space-xs font-bold leading-tight">11m 42s</span>
+</div>
+<div class="p-space-xs bg-secondary-container/30 text-on-secondary-container rounded-lg flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">trending_down</span>
+<span class="font-label-sm text-label-sm font-bold">-1m 18s</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant font-medium">Efficiency Index</span>
+<span class="text-secondary font-bold">Well within <14m SLA</span>
+</div>
+<div class="w-full h-2 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 83%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Peak window load: 13m 15s avg</span>
+</div>
+</div>
+<!-- Card 3: Accuracy & Fulfillment -->
+<div class="flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Fulfillment Accuracy</span>
+<span class="font-display text-display text-secondary mt-space-xs font-bold leading-tight">99.4%</span>
+</div>
+<div class="p-space-xs bg-surface-container text-on-surface-variant rounded-lg">
+<span class="material-symbols-outlined text-base text-secondary">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Total Orders Serviced</span>
+<span class="text-on-surface font-bold">4,120 tkts</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded-lg">
+<span class="material-symbols-outlined text-sm text-primary">info</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Only 6 remakes/refunds logged</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Top 2% of metropolitan kitchens</span>
+</div>
+</div>
+<!-- Card 4: Prime Cost Margin -->
+<div class="flex flex-col justify-between p-space-lg bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Prime Cost Margin</span>
+<span class="font-display text-display text-on-surface mt-space-xs font-bold leading-tight">72.8%</span>
+</div>
+<div class="p-space-xs bg-secondary-container/30 text-on-secondary-container rounded-lg flex items-center gap-0.5">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+<span class="font-label-sm text-label-sm font-bold">+2.1%</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-md pt-space-xs">
+<div class="grid grid-cols-2 gap-space-xs font-label-sm text-label-sm">
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="text-on-surface-variant">Food Cost</span>
+<span class="font-bold text-on-surface">$54,200 (29.3%)</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded flex flex-col">
+<span class="text-on-surface-variant">Kitchen Labor</span>
+<span class="font-bold text-on-surface">$41,800 (22.6%)</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Prime Cost Benchmark: 51.9% total</span>
+</div>
+</div>
+</section>
+<!-- Mid Bento Row: Heatmap & Channel Breakdown -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Day & Hourly Rush Heatmap & Velocity Trend (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Thermal Load & Flow Analysis</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Hourly Ticket Volume & Rush Clustering</h2>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low p-1 rounded-full text-on-surface-variant">
+<span class="px-space-sm py-1 bg-surface-container-lowest rounded-full font-label-sm text-label-sm text-on-surface font-semibold shadow-xs">Heatmap Grid</span>
+<span class="px-space-sm py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface cursor-pointer">Order Volume</span>
+</div>
+</div>
+<!-- Heatmap Visual Matrix -->
+<div class="flex flex-col gap-space-xs overflow-x-auto pb-space-xs">
+<div class="grid grid-cols-12 gap-1 text-center font-label-sm text-label-sm text-on-surface-variant min-w-[540px]">
+<span class="text-left font-semibold">Day</span>
+<span>11:00</span>
+<span>12:00</span>
+<span>13:00</span>
+<span>14:00</span>
+<span>16:00</span>
+<span>17:00</span>
+<span class="text-primary font-bold">18:00</span>
+<span class="text-primary font-bold">19:00</span>
+<span class="text-primary font-bold">20:00</span>
+<span>21:00</span>
+<span>22:00</span>
+</div>
+<!-- Monday -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Mon</span>
+<div class="h-7 rounded bg-surface-container hover:scale-105 transition-transform" title="Mon 11am: 18 tkts"></div>
+<div class="h-7 rounded bg-primary/20 hover:scale-105 transition-transform" title="Mon 12pm: 42 tkts"></div>
+<div class="h-7 rounded bg-primary/30 hover:scale-105 transition-transform" title="Mon 1pm: 56 tkts"></div>
+<div class="h-7 rounded bg-surface-container hover:scale-105 transition-transform"></div>
+<div class="h-7 rounded bg-surface-container-low hover:scale-105 transition-transform"></div>
+<div class="h-7 rounded bg-primary/20 hover:scale-105 transition-transform"></div>
+<div class="h-7 rounded bg-primary/50 hover:scale-105 transition-transform" title="Mon 6pm: 78 tkts"></div>
+<div class="h-7 rounded bg-primary/60 hover:scale-105 transition-transform" title="Mon 7pm: 84 tkts"></div>
+<div class="h-7 rounded bg-primary/40 hover:scale-105 transition-transform"></div>
+<div class="h-7 rounded bg-primary/20 hover:scale-105 transition-transform"></div>
+<div class="h-7 rounded bg-surface-container hover:scale-105 transition-transform"></div>
+</div>
+<!-- Tuesday -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Tue</span>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-primary/25"></div>
+<div class="h-7 rounded bg-primary/35"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-surface-container-low"></div>
+<div class="h-7 rounded bg-primary/20"></div>
+<div class="h-7 rounded bg-primary/50"></div>
+<div class="h-7 rounded bg-primary/65"></div>
+<div class="h-7 rounded bg-primary/45"></div>
+<div class="h-7 rounded bg-primary/20"></div>
+<div class="h-7 rounded bg-surface-container-low"></div>
+</div>
+<!-- Wednesday -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Wed</span>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-primary/30"></div>
+<div class="h-7 rounded bg-primary/45"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-primary/35"></div>
+<div class="h-7 rounded bg-primary/60"></div>
+<div class="h-7 rounded bg-primary/75"></div>
+<div class="h-7 rounded bg-primary/50"></div>
+<div class="h-7 rounded bg-primary/25"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+</div>
+<!-- Thursday -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Thu</span>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-primary/40"></div>
+<div class="h-7 rounded bg-primary/50"></div>
+<div class="h-7 rounded bg-surface-container-low"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+<div class="h-7 rounded bg-primary/40"></div>
+<div class="h-7 rounded bg-primary/70"></div>
+<div class="h-7 rounded bg-primary/80"></div>
+<div class="h-7 rounded bg-primary/65"></div>
+<div class="h-7 rounded bg-primary/40"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+</div>
+<!-- Friday (PEAK) -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-primary font-bold">Fri</span>
+<div class="h-7 rounded bg-primary/20"></div>
+<div class="h-7 rounded bg-primary/55"></div>
+<div class="h-7 rounded bg-primary/70"></div>
+<div class="h-7 rounded bg-primary/25"></div>
+<div class="h-7 rounded bg-primary/35"></div>
+<div class="h-7 rounded bg-primary/60"></div>
+<div class="h-7 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm shadow-sm" title="Fri 18:00 Peak">142</div>
+<div class="h-7 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm shadow-sm" title="Fri 19:00 Peak">168</div>
+<div class="h-7 rounded bg-primary/90 text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm">139</div>
+<div class="h-7 rounded bg-primary/60"></div>
+<div class="h-7 rounded bg-primary/30"></div>
+</div>
+<!-- Saturday (PEAK) -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-primary font-bold">Sat</span>
+<div class="h-7 rounded bg-primary/30"></div>
+<div class="h-7 rounded bg-primary/65"></div>
+<div class="h-7 rounded bg-primary/80"></div>
+<div class="h-7 rounded bg-primary/40"></div>
+<div class="h-7 rounded bg-primary/45"></div>
+<div class="h-7 rounded bg-primary/70"></div>
+<div class="h-7 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm shadow-sm" title="Sat 18:00 Peak">154</div>
+<div class="h-7 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm shadow-sm" title="Sat 19:00 Peak">175</div>
+<div class="h-7 rounded bg-primary text-on-primary font-bold text-center flex items-center justify-center font-label-sm text-label-sm shadow-sm" title="Sat 20:00 Peak">162</div>
+<div class="h-7 rounded bg-primary/75"></div>
+<div class="h-7 rounded bg-primary/40"></div>
+</div>
+<!-- Sunday -->
+<div class="grid grid-cols-12 gap-1 items-center min-w-[540px]">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Sun</span>
+<div class="h-7 rounded bg-primary/40"></div>
+<div class="h-7 rounded bg-primary/75"></div>
+<div class="h-7 rounded bg-primary/65"></div>
+<div class="h-7 rounded bg-primary/30"></div>
+<div class="h-7 rounded bg-primary/30"></div>
+<div class="h-7 rounded bg-primary/50"></div>
+<div class="h-7 rounded bg-primary/75"></div>
+<div class="h-7 rounded bg-primary/80"></div>
+<div class="h-7 rounded bg-primary/60"></div>
+<div class="h-7 rounded bg-primary/35"></div>
+<div class="h-7 rounded bg-surface-container"></div>
+</div>
+</div>
+<!-- Heatmap Footer Legend & Callout -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Density Index:</span>
+<div class="flex items-center gap-1">
+<span class="w-3.5 h-3.5 rounded bg-surface-container"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary/25"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary/50"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary/75"></span>
+<span class="w-3.5 h-3.5 rounded bg-primary"></span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Low (<20) → Peak (175+)</span>
+</div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base">alarm</span>
+          Peak Velocity Alert: Fri/Sat 18:00 - 21:00 requires +2 prep hands
+        </div>
+</div>
+</div>
+<!-- Aggregator vs Direct Channel Breakdown (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Revenue Acquisition</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Channel Profitability</h2>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">pie_chart</span>
+</div>
+<!-- Donut Visual SVG & Stats -->
+<div class="flex items-center justify-center gap-space-lg py-space-xs">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background Ring -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4.5"></path>
+<!-- Direct Fleet 42% -->
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="42, 100" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- DoorDash 35% (offset: 42) -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="35, 100" stroke-dashoffset="-42" stroke-linecap="round" stroke-width="4.5"></path>
+<!-- UberEats 23% (offset: 77) -->
+<path class="text-tertiary-fixed-dim" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="23, 100" stroke-dashoffset="-77" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">$184.9k</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Net GMV</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-semibold">Direct Fleet</span>
+<span class="text-on-surface-variant ml-auto">42%</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="text-on-surface font-semibold">DoorDash</span>
+<span class="text-on-surface-variant ml-auto">35%</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-md text-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="text-on-surface font-semibold">UberEats</span>
+<span class="text-on-surface-variant ml-auto">23%</span>
+</div>
+</div>
+</div>
+<!-- Channel Commission Breakdown Rows -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Direct Fleet App</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-secondary font-bold">2.4% processing</span>
+<span class="font-label-sm text-label-sm bg-secondary-container/40 text-on-secondary-container px-space-xs py-0.5 rounded font-bold">97.6% Net</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">DoorDash Drive</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">18.0% take</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-bold">82.0% Net</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-on-surface font-medium">UberEats Market</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant">22.5% take</span>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface px-space-xs py-0.5 rounded font-bold">77.5% Net</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Direct sales campaign added +$12.4k net profit retention vs standard 3P aggregators.</span>
+</div>
+</div>
+</section>
+<!-- Lower Section: Station Bottlenecks & Menu Profit Engineering -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Station Bottleneck Analytics (5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Line Optimization</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Station Bottleneck Timers</h2>
+</div>
+<span class="material-symbols-outlined text-primary">timer</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Target preparation time per station benchmarked at max <span class="font-semibold text-on-surface">10 minutes</span> before expo handoff.
+      </p>
+<!-- Bar Chart Visualization -->
+<div class="flex flex-col gap-space-md py-space-xs">
+<!-- Station 1: Grill -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-primary">skillet</span> Grill & Char Station
+            </span>
+<span class="font-label-md text-label-md text-primary font-bold">14m avg <span class="text-error font-semibold">(+4m bottleneck)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary rounded-full" style="width: 88%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-right">Steak frites, Smash patties, Charred octopus</span>
+</div>
+<!-- Station 2: Stone Oven -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-secondary">local_pizza</span> Artisanal Stone Oven
+            </span>
+<span class="font-label-md text-label-md text-secondary font-bold">9m avg <span class="text-secondary font-semibold">(Optimal)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary rounded-full" style="width: 58%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-right">Sourdough flatbreads, Roasted brussels, Calzones</span>
+</div>
+<!-- Station 3: Fryer -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">soup_kitchen</span> Dual Fryer Bank
+            </span>
+<span class="font-label-md text-label-md text-secondary font-bold">6m avg <span class="text-secondary font-semibold">(Fast)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 38%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-right">Truffle fries, Tempura broccolini, Crispy wings</span>
+</div>
+<!-- Station 4: Expo pass -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">inventory_2</span> Expo Pass & Thermal Packaging
+            </span>
+<span class="font-label-md text-label-md text-on-surface font-bold">2m avg <span class="text-secondary font-semibold">(Target <3m)</span></span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-surface-tint rounded-full" style="width: 14%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-right">Bagging, tamper-evident seals, driver handover</span>
+</div>
+</div>
+<!-- Action Advisory Box -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-xl">bolt</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Executive Line Recommendation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Grill queue exceeds standard 10m threshold during Friday 19:00 window. Implement par-baking or shift 1 prep cook to Grill #2.
+          </span>
+</div>
+</div>
+</div>
+<!-- Top Profit Drivers vs Loss Leaders Table (7 cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Menu Engineering Matrix</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Profit Drivers vs. Loss Leaders</h2>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1 rounded-full text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold">Sorted by Gross Contribution</span>
+</div>
+</div>
+<!-- Table Representation -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider bg-surface-container-low rounded-lg">
+<th class="py-space-sm px-space-md rounded-l-lg">Dish Item</th>
+<th class="py-space-sm px-space-sm">Volume</th>
+<th class="py-space-sm px-space-sm">Food Cost %</th>
+<th class="py-space-sm px-space-sm">Margin %</th>
+<th class="py-space-sm px-space-md rounded-r-lg">Chef Recommendation</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<!-- Row 1: Star Driver -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Truffle Wild Mushroom Flatbread
+              </td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">892 orders</td>
+<td class="py-space-sm px-space-sm text-on-surface">18.4%</td>
+<td class="py-space-sm px-space-sm font-bold text-secondary">81.6% ($18.50)</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-secondary-container/40 text-on-secondary-container px-space-xs py-0.5 rounded-full font-label-sm text-label-sm font-semibold">Star: Feature in hero combos</span>
+</td>
+</tr>
+<!-- Row 2: Strong Driver -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Crispy Hot Honey Chicken Sando
+              </td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">1,140 orders</td>
+<td class="py-space-sm px-space-sm text-on-surface">22.8%</td>
+<td class="py-space-sm px-space-sm font-bold text-secondary">77.2% ($14.20)</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-secondary-container/40 text-on-secondary-container px-space-xs py-0.5 rounded-full font-label-sm text-label-sm font-semibold">Workhorse: Protect supply lines</span>
+</td>
+</tr>
+<!-- Row 3: Solid Contribution -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+                Harissa Braised Lamb Bowl
+              </td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">420 orders</td>
+<td class="py-space-sm px-space-sm text-on-surface">31.2%</td>
+<td class="py-space-sm px-space-sm font-bold text-on-surface">68.8% ($15.80)</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-surface-container text-on-surface-variant px-space-xs py-0.5 rounded-full font-label-sm text-label-sm">Puzzle: Boost digital visibility</span>
+</td>
+</tr>
+<!-- Row 4: Loss Leader / At Risk -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Prime Ribeye Steak Frites
+              </td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">318 orders</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">44.6%</td>
+<td class="py-space-sm px-space-sm font-bold text-primary">55.4% ($18.00)</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-error-container/50 text-on-error-container px-space-xs py-0.5 rounded-full font-label-sm text-label-sm font-bold">Dog: Re-portion or adjust +$2</span>
+</td>
+</tr>
+<!-- Row 5: Margin Trap -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md text-on-surface font-semibold flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                Wild Catch Halibut Crudo
+              </td>
+<td class="py-space-sm px-space-sm text-on-surface font-medium">194 orders</td>
+<td class="py-space-sm px-space-sm text-primary font-bold">48.2%</td>
+<td class="py-space-sm px-space-sm font-bold text-primary">51.8% ($11.40)</td>
+<td class="py-space-sm px-space-md">
+<span class="bg-error-container/50 text-on-error-container px-space-xs py-0.5 rounded-full font-label-sm text-label-sm font-bold">Loss Risk: Swap seasonal whitefish</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Quick Action / Footer Row -->
+<div class="flex items-center justify-between pt-space-xs bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-lg">restaurant_menu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Overall Culinary Food Cost across active menu: <strong class="text-on-surface font-bold">29.3%</strong></span>
+</div>
+<button class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold hover:underline">
+          Open Recipe Costing Engine →
+        </button>
+</div>
+</div>
+</section>
+<!-- Bottom Visual Showcase & Operational Notes -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Visual 1: Star Menu Item -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-xl object-cover shrink-0" data-alt="Close up gourmet artisanal wild mushroom flatbread straight out of a stone oven with shaved black truffles and fresh herbs, served on dark ceramic board, natural daylight, warm terracotta aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCATUF_MIZWbNtd3mfrSTyFRvihfc1tX3wHcHxZvpknMEL5wofSflZy5w1y7rLXHtG9Lpu8zvXK055uSQfliz0duBLcoqAocCuNOlx1C4uInu5YukLbKcBw1BeUUcu_hMXer13b02p5agfadL4QjhhTF_1a6RPkHI0HDOqo_C4399xWrCiuJS9aLyT-bGHluFqKkbOajqqnw6yn-SSkg-uW2CU83Lnx2KdsFMNfQlQSUjOOq60aMHpj0g"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Top Margin Contributor</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Truffle Wild Mushroom Flatbread</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">$16,502 gross margin generated this cycle.</span>
+</div>
+</div>
+<!-- Visual 2: High Velocity Dish -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-xl object-cover shrink-0" data-alt="Delicious crispy fried hot honey chicken sandwich with purple cabbage slaw in a brioche bun on a warm stone kitchen pass counter, mouth-watering culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-7yomZmTLGHgUjfdRXPqD8HYpz6DGH5r3X-FVgwj6_ww0EE_dpTUtQ3NehKUgAjb9NW4ZLLiVa0faUNDXGuemStA4AHQ8kbn3j8iJLFi5dbYHAWtpBB2Q4GRQH5Lo8OS3_t2lU4Ts4KFH7-P4j8WR97xwt0S87zu8rznincK4cbjRhCKKB8Fekd1DqyICoAeUQRkkRnXgsp0j73Vh0GxTTuXNoTaWyQvqR9VlVUD961s2ohjkPo_fRg"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Velocity Champion</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Hot Honey Chicken Sando</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">1,140 units sold (27.6% of all orders).</span>
+</div>
+</div>
+<!-- Visual 3: Kitchen Station Spotlight -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-xl object-cover shrink-0" data-alt="Modern professional commercial kitchen line with stainless steel grill pass, warm heat lamps, organized chef mise en place, clean warm ambient lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDukYhs7O96v6GuxXs9rLgLOdpnG1ae15w9y5Cms-eZ-CW1w2L8IrFiOYq55erdt253zUrA2MQUnD90HAz_oZTp9K2b7gAcXHvks_1qXscCW0syPgBYpKeHGw4gGwFYpSJ_CnmS5RbJZ_wq45lzGSvHAWewZkXLkH-kvyHuRomrma3rjIVLKMDnjTfh2NOum_abmW0EoBM7TxzPeXhEr76ZKYlZUD4Xpibvim-Md64NKfjR3FfCADkRag"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Hub Efficiency Audit</span>
+<h3 class="font-title-md text-title-md text-on-surface truncate">Downtown Line Audit #01</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Audit Score: 98.2 / 100 with zero critical health flags.</span>
+</div>
+</div>
+</section>
+</div></main></div></body></html>
