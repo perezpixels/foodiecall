@@ -1,0 +1,21 @@
+# GitHub Linguist — keep the language bar on product code (Dart / Flutter),
+# not Stitch design HTML dumps or generated/vendor noise.
+
+# Design reference screens (Stitch exports)
+stitch_foodiecall_restaurant/** linguist-vendored
+stitch_foodiecall_restaurant/** linguist-documentation
+
+# Client PDF / capture tooling — not the product runtime
+presentation/** linguist-vendored
+presentation/** linguist-documentation
+
+# Spec / docs
+*.md linguist-documentation
+Foodiecall_Kitchen_Cursor_Implementation_Spec.md linguist-documentation
+
+# Tiny Flutter web shell (not app logic)
+admin/web/index.html linguist-vendored
+admin/web/manifest.json linguist-vendored
+
+# React landing is real product code; leave detectable as TypeScript.
+# Flutter (Dart) sources in admin/lib remain the majority once HTML is excluded.
