@@ -33,6 +33,10 @@ admin/android/app/debug/
 admin/android/app/profile/
 admin/android/app/release/
 
+# Stitch design exports (local reference only — kept off GitHub so
+# language stats reflect Dart/Flutter product code)
+stitch_foodiecall_restaurant/
+
 # Assembled local / CI web preview (React root + Flutter /app)
 preview/
 
