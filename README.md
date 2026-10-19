@@ -1,38 +1,23 @@
 # Foodiecall Kitchen
 
-Flutter-first restaurant ordering platform for Nigerian kitchens — **landing**, **kitchen portal (web)**, and a path to **mobile**.
+Flutter-first restaurant platform with a **React marketing landing** and a **Flutter kitchen webapp** (onboarding → portal). Mobile can share the same Flutter app later.
 
-| Surface | Path |
-| --- | --- |
-| Landing → onboarding → kitchen portal | Flutter app in [`admin/`](admin/) |
-| Optional React compare landing | [`web/`](web/) → served at `/react/` |
-| Design reference (Stitch) | [`stitch_foodiecall_restaurant/`](stitch_foodiecall_restaurant/) |
+| Surface | URL (local) | Code |
+| --- | --- | --- |
+| React landing | http://localhost:7357/ | [`web/`](web/) |
+| Flutter onboarding → portal | http://localhost:7357/app/ | [`admin/`](admin/) |
 
-## Preview
+**Get started** on the React landing opens Flutter onboarding (welcome → sign-in → dashboard).
 
-After GitHub Pages deploys:
+## Local preview
 
-- **App:** https://perezpixels.github.io/foodiecall/
-- **React compare:** https://perezpixels.github.io/foodiecall/react/
-
-## Local run
-
-```bash
-cd admin
-flutter pub get
-flutter run -d web-server --release --web-port 7357 --web-hostname localhost
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts\preview.ps1
 ```
 
-Open http://localhost:7357 — **Get started** opens kitchen onboarding/sign-in → dashboard. Only the **React** button opens `/react/`.
+Then open http://localhost:7357/
 
-Rebuild the React compare page into Flutter’s web assets:
+## Repo / live preview
 
-```bash
-cd web
-npm ci
-npm run build
-```
-
-## Repo
-
-https://github.com/perezpixels/foodiecall
+- Repo: https://github.com/perezpixels/foodiecall
+- Pages: https://perezpixels.github.io/foodiecall/

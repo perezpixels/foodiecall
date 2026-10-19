@@ -28,10 +28,10 @@ jobs:
           cache: npm
           cache-dependency-path: web/package-lock.json
 
-      - name: Build React compare landing into Flutter web/
+      - name: Build React landing (site root)
         working-directory: web
         env:
-          VITE_BASE: /${{ github.event.repository.name }}/react/
+          VITE_BASE: /${{ github.event.repository.name }}/
         run: |
           npm ci
           npm run build
@@ -42,18 +42,16 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Flutter pub get
+      - name: Build Flutter kitchen webapp under /app/
         working-directory: admin
-        run: flutter pub get
-
-      - name: Build Flutter web (landing + kitchen portal)
-        working-directory: admin
-        run: flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+        run: |
+          flutter pub get
+          flutter build web --release --base-href "/${{ github.event.repository.name }}/app/" --output=../preview/app
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: admin/build/web
+          path: preview
 
   deploy:
     needs: build

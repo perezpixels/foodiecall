@@ -5,10 +5,13 @@ import "./Landing.css";
 const PLAY_STORE =
   "https://play.google.com/store/apps/details?id=com.foodiecall.kitchen";
 const APP_STORE = "https://apps.apple.com/app/foodiecall-kitchen/id0000000000";
-// Vite base ends with /react/; strip that to reach the Flutter host root.
-const APP_ROOT = (import.meta.env.BASE_URL || "/").replace(/react\/?$/, "");
-const FLUTTER_LANDING = APP_ROOT || "/";
-const ADMIN_ENTRY = `${FLUTTER_LANDING}?admin=1`;
+
+// Kitchen webapp lives under /app/ (Flutter onboarding → portal).
+const ROOT = (import.meta.env.BASE_URL || "/").endsWith("/")
+  ? import.meta.env.BASE_URL || "/"
+  : `${import.meta.env.BASE_URL}/`;
+const APP_BASE = `${ROOT}app/`;
+const ONBOARDING_ENTRY = APP_BASE;
 
 const meals = [
   "Party jollof",
@@ -69,8 +72,7 @@ export default function Landing() {
     return () => window.clearInterval(id);
   }, []);
 
-  const openAdmin = () => window.location.assign(ADMIN_ENTRY);
-  const openFlutter = () => window.location.assign(FLUTTER_LANDING);
+  const openOnboarding = () => window.location.assign(ONBOARDING_ENTRY);
 
   return (
     <div className="landing">
@@ -92,14 +94,6 @@ export default function Landing() {
               <span className="brand-mark" aria-hidden />
               <span className="brand-name">Foodiecall</span>
             </div>
-            <div className="topbar-actions">
-              <button type="button" className="chip-compare" onClick={openFlutter}>
-                Flutter
-              </button>
-              <button type="button" className="link-light" onClick={openAdmin}>
-                Kitchen portal
-              </button>
-            </div>
           </motion.header>
 
           <div className="hero-stage">
@@ -112,9 +106,7 @@ export default function Landing() {
               <motion.p className="hero-kicker" variants={fadeUp}>
                 Victoria Island · Lagos
               </motion.p>
-              <motion.h1 variants={fadeUp}>
-                Foodiecall
-              </motion.h1>
+              <motion.h1 variants={fadeUp}>Foodiecall</motion.h1>
               <motion.p className="hero-lead" variants={fadeUp}>
                 Chef-crafted Lagos meals, ordered on call and run from one kitchen
                 pass.
@@ -137,7 +129,7 @@ export default function Landing() {
                 <motion.button
                   type="button"
                   className="btn-primary"
-                  onClick={openAdmin}
+                  onClick={openOnboarding}
                   whileHover={{ y: -3, scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -243,7 +235,7 @@ export default function Landing() {
             Dashboard, tickets, 86 inventory, customers, promotions, and reports
             on one pass for Chef Amaka’s brigade.
           </p>
-          <button type="button" className="text-link" onClick={openAdmin}>
+          <button type="button" className="text-link" onClick={openOnboarding}>
             Open kitchen portal
           </button>
         </motion.article>
@@ -293,7 +285,7 @@ export default function Landing() {
             Start in the kitchen portal, or put Foodiecall on your guests’ phones.
           </p>
           <div className="cta-row center">
-            <button type="button" className="btn-primary" onClick={openAdmin}>
+            <button type="button" className="btn-primary" onClick={openOnboarding}>
               Get started
             </button>
             <button
